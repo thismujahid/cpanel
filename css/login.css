@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+}
+
+.container .login-area,
+.container .pic-area {
+    min-height: 90vh;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+
+.container .login-area form {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.container .login-area h2 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.container .login-area form .custom-input {
+    position: relative;
+    width: 100%;
+}
+
+.container .login-area form .custom-input input {
+    width: 85%;
+    padding: 10px 10px 10px 30px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+}
+
+.container .login-area form .custom-input input:focus {
+    outline: none;
+}
+
+.container .login-area form .custom-input .fa {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    font-size: 20px;
+    border-right: 1px solid rgba(0, 0, 0, .5);
+    text-align: center;
+    width: 20px;
+    height: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .login-area form .custom-input #sh,
+.container .login-area form .custom-input #hi {
+    right: 0 !important;
+    left: inherit;
+    border-left: 1px solid rgba(0, 0, 0, .5);
+    border-right: none;
+    cursor: pointer;
+}
+
+.container .login-area form .check-input {
+    font-size: 17px;
+    padding: 0 0 0 4px;
+}
+
+.container .login-area form .check-input label {
+    user-select: none;
+}
+
+.container .login-area form .submit input {
+    width: 100%;
+    background-color: #003147;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+.container .login-area form .submit .fa {
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+
+.container .pic-area {
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    background-image: url(../imgs/login-pic.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+}
+
+@media(max-width:950px) {
+    .container .pic-area {
+        display: none;
+    }
+}

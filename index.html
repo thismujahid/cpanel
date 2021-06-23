@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-area">
+            <form action="" method="GET" id="login-form">
+                <h2>Log-In</h2>
+                <div class="custom-input">
+                    <input type="text" name="username" value="mohamed" id="username" placeholder="Username" autocomplete="off">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="custom-input">
+                    <input type="password" name="password" value="12349876" id="password" placeholder="Password">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <i class="fa fa-eye " onclick="shwoPass()" id="sh" style="display: none;" aria-hidden="true"></i>
+                    <i class="fa fa-eye-slash" onclick="shwoPass()" id="hi" aria-hidden="true"></i>
+                </div>
+                <p id="err"></p>
+                <div class="custom-input submit">
+                    <input type="submit" value="Log-In">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                </div>
+                <p>Do You Forget The Password? <a href="reset-pass.html">Click Here</a></p>
+            </form>
+        </div>
+        <div class="pic-area">
+            <!-- <img src="imgs/login-pic.svg" alt="Welcome MSG"> -->
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

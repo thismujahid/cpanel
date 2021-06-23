@@ -1,0 +1,16 @@
+.details {
+    grid-template-columns: 1fr;
+}
+
+.details .recent-customers .delete-btn {
+    width: 1%;
+}
+
+.details .recent-customers .delete-btn span {
+    background-color: red;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

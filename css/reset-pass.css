@@ -1,0 +1,104 @@
+.reset-pass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.reset-pass form {
+    background-color: #fff;
+    box-shadow: 0px 0px 14px -7px black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+}
+
+.reset-pass form p {
+    font-size: 18px;
+}
+
+.reset-pass form input {
+    width: 70%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    outline: none;
+}
+
+.reset-pass form input:last-child {
+    width: 25%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    cursor: pointer;
+}
+
+.reset-pass form input:last-child:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    background-color: transparent;
+}
+
+.back-to-home {
+    display: block;
+    position: absolute;
+    top: 67%;
+    left: 45%;
+    text-decoration: none;
+    background-color: #003147;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #fff;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    border: 1px solid #003147;
+}
+
+.back-to-home:hover {
+    background-color: transparent;
+    color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+@media (max-width: 500px) {
+    .reset-pass form {
+        width: 94%;
+    }
+    .reset-pass form input {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .reset-pass form input:last-child {
+        width: 100%;
+    }
+    .back-to-home {
+        left: 37%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .reset-pass form {
+        width: 94%;
+    }
+}

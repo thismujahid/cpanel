@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Start Navigation -->
+        <div class="navigation">
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-apple" aria-hidden="true"></i></span>
+                        <span class="title"><h2>Brand Name</h2></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="home.html">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="customers.html">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="massages.html">
+                        <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="help.html">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="password.html">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                        <span class="title">Sing Out</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-to" onclick="toggler()"></div>
+        </div>
+        <!-- End Navigation -->
+        <!-- start Main -->
+        <div class="main">
+            <!-- Start Top Bar -->
+            <div class="topbar">
+                <div class="toggel" onclick="toggler()"></div>
+                <div class="search">
+                    <label for="search">
+                        <input type="text" placeholder="What You Search About?">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+                <div class="user-pic">
+                    <img src="imgs/user.svg" alt="User Img">
+                </div>
+            </div>
+            <!-- Start Top Bar -->
+            <!-- start Cards Box -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,028</div>
+                        <div class="cardName">Dialy Viwes</div>
+                    </div>
+                    <div class="cardIcon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="cardIcon">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">546</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="cardIcon">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">4,067</div>
+                        <div class="cardName">Ernings</div>
+                    </div>
+                    <div class="cardIcon">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- End Cards Box -->
+            <!-- Start Deatials Section -->
+            <div class="details">
+                <div class="recent-orders">
+                    <div class="header">
+                        <h2>Recent Orders</h2>
+                        <a href="recent-orders.html" class="btn">Viwe All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>payment</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HP Laptop</td>
+                                <td><span>$6500</td>
+                                <td>Paid</td>
+                                <td><span class="status deliverd">Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Oppo Phone</td>
+                                <td>$4200</td>
+                                <td>Paid</td>
+                                <td><span class="status pind">Pinding</span></td>
+                            </tr>
+                            <tr>
+                                <td>O'Clock</td>
+                                <td>$200</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>HeadPhone</td>
+                                <td>$300</td>
+                                <td>Paid</td>
+                                <td><span class="status in-prog">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Power Banck</td>
+                                <td>$100</td>
+                                <td>Paid</td>
+                                <td><span class="status deliverd">Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Chair</td>
+                                <td>$400</td>
+                                <td>Paid</td>
+                                <td><span class="status pind">Pinding</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sky TV Screen</td>
+                                <td>$2200</td>
+                                <td>Paid</td>
+                                <td><span class="status deliverd">Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bicycle</td>
+                                <td>$3200</td>
+                                <td>Paid</td>
+                                <td><span class="status in-prog">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lamp</td>
+                                <td>$10</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <td>Bicycle</td>
+                            <td>$3200</td>
+                            <td>Paid</td>
+                            <td><span class="status in-prog">In Progress</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recent-customers">
+                    <div class="header">
+                        <h2>Recent Customers</h2>
+                        <a href="customers.html" class="btn">Viwe All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img 6.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Mohamed Ahmed </br> <span>Giza</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/user.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Mohamed Mojahed </br> <span>Cairo</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img8.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Haidy Yhia </br> <span>Helwan</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img8.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Israa Shrif </br> <span>Monofya</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img 6.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Osama Salah </br> <span>Sharqeya</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/user.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Mohamed Ahmed </br> <span>Giza</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img 6.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Ahmed Ali </br> <span>Nasr City</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/user.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Abod Steva </br> <span>Giza</span></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="40px">
+                                <div class="img"><img src="imgs/img8.svg" width="100%" alt="Clint Pic"></div>
+                            </td>
+                            <td>
+                                <h4>Aya Read </br> <span>Sudan</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- End Deatials Section -->
+        </div>
+        <!-- End Main Sction -->
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

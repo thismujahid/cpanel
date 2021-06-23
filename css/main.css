@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
+
+/* Start Global Area */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #003147;
+    --hover-color: #03a9f4;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+
+/* End Global Area */
+
+
+/* Start Navigation */
+
+.navigation {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: var(--main-color);
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.navigation.active {
+    width: 60px;
+}
+
+.navigation .links {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation .links li {
+    position: relative;
+    width: 100%;
+}
+
+.navigation .links li:not(:nth-child(1)):hover {
+    background-color: var(--hover-color);
+}
+
+.navigation .links li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.navigation .links li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.navigation .links li a .title {
+    line-height: 60px;
+    height: 60px;
+    padding: 0 10px;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+}
+
+
+/* End Navigation */
+
+
+/* Start Main Section */
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.main.active {
+    width: calc(100% - 60px);
+}
+
+
+/* 
+Start Top Bar
+*/
+
+.main .topbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.main .topbar .toggel {
+    width: 60px;
+    height: 100%;
+    position: relative;
+}
+
+.nav-to {
+    display: none;
+}
+
+.main .topbar .toggel::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.main .search {
+    width: 400px;
+    position: relative;
+}
+
+.main .search label input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    padding-left: 35px;
+    outline: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.main .topbar .search .fa {
+    position: absolute;
+    left: 13px;
+    top: 9px;
+    font-size: 20px;
+}
+
+.main .topbar .user-pic {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main .topbar .user-pic img {
+    width: 60px;
+    height: 90%;
+    padding-top: 10%;
+}
+
+
+/* 
+Start Cards Box
+*/
+
+.main .cardBox {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.main .cardBox .card {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.main .cardBox .card .numbers {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.main .cardBox .card .cardName {
+    position: relative;
+    font-size: 20px;
+    color: #999;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.main .cardBox .card .cardIcon {
+    font-size: 2.5em;
+    position: relative;
+    color: var(--hover-color);
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.main .cardBox .card:hover {
+    background-color: var(--hover-color);
+}
+
+.main .cardBox .card:hover .cardName {
+    color: #fff;
+}
+
+.main .cardBox .card:hover .cardIcon {
+    color: #fff;
+}
+
+
+/* 
+Start Details Section
+*/
+
+.details {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    padding: 10px;
+}
+
+.details .recent-orders,
+.details .recent-customers {
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.details .recent-orders {
+    min-height: 150px;
+}
+
+.details .recent-customers {
+    min-height: 200px;
+}
+
+.details .recent-orders .header,
+.details .recent-customers .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details .recent-orders .header h2,
+.details .recent-customers .header h2 {
+    font-weight: 600;
+}
+
+.details .recent-orders .header .btn,
+.details .recent-customers .header .btn {
+    position: relative;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: var(--hover-color);
+    color: #fff;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.details .recent-orders .header .btn:hover,
+.details .recent-customers .header .btn:hover {
+    background-color: var(--main-color);
+}
+
+.details .recent-orders table {
+    position: relative;
+    width: 100%;
+}
+
+.details .recent-orders table thead tr th {
+    text-align: left;
+    font-weight: 600;
+}
+
+.details .recent-orders tbody tr {
+    transition: .1s linear;
+    -webkit-transition: .1s linear;
+    -moz-transition: .1s linear;
+    -ms-transition: .1s linear;
+    -o-transition: .1s linear;
+    cursor: pointer;
+}
+
+.details .recent-orders tbody tr:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+.details .recent-orders tbody tr td {
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329) !important;
+}
+
+.details .recent-orders tbody tr:last-child {
+    border-bottom: none;
+}
+
+.details .recent-orders thead tr th:last-child,
+.details .recent-orders tbody tr td:last-child {
+    text-align: right;
+    padding: 5px 0;
+}
+
+.details .recent-orders tbody .status {
+    background-color: red;
+    padding: 2px;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.details .recent-orders tbody .status.deliverd {
+    background-color: #8de02c;
+}
+
+.details .recent-orders tbody .status.pind {
+    background-color: #f9ca3f;
+}
+
+.details .recent-orders tbody .status.in-prog {
+    background-color: #03a9f4;
+}
+
+.details .recent-customers table {
+    padding: 5px 0;
+}
+
+.details .recent-customers table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.details .recent-customers table tr td .img img {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    cursor: pointer;
+}
+
+.details .recent-customers table tr td:nth-child(2) {
+    padding-left: 7px;
+    cursor: pointer;
+}
+
+.details .recent-customers table tr td:nth-child(2) h4 {
+    font-weight: 600;
+}
+
+.details .recent-customers table tr td:nth-child(2) h4 span {
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* End Main Section */
+
+
+/* Start Responve  */
+
+@media (max-width: 935px) {
+    .navigation {
+        left: -300px;
+        width: 300px;
+    }
+    .navigation.active {
+        left: 0;
+        width: 300px;
+        z-index: 1000;
+    }
+    .main {
+        width: 100%;
+    }
+    .main.main.active {
+        width: calc(100% - 300px);
+    }
+    .main .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 855px) {
+    .main .details {
+        grid-template-columns: 1fr;
+    }
+    .details .recent-customers {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .navigation.active {
+        width: 100%;
+    }
+    .main.main.active {
+        width: 100%;
+    }
+    .main .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main .details .recent-orders {
+        overflow-x: auto;
+    }
+    .main .details .recent-orders table {
+        width: 600px;
+    }
+    .main .topbar .toggel {
+        width: 25%;
+        z-index: 2;
+    }
+    .main .topbar .user-pic {
+        width: 25%;
+    }
+    .navigation .links li a .title {
+        padding: 0;
+    }
+    .nav-to {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        color: #fff;
+        background-color: var(--hover-color);
+        text-align: center;
+        line-height: 60px;
+        transition: .3s linear;
+        -webkit-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -o-transition: .3s linear;
+    }
+    .nav-to::before {
+        content: 'x';
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-weight: 300;
+        font-family: Arial, sans-serif;
+    }
+}
+
+
+/* End Responve  */
